@@ -20,7 +20,7 @@ VALUES
 ('A00444444', 'Sue', 'Fox', 'Computing'),
 ('A00555555', 'Ben', 'Ray', 'Mining')
 ";
-// $db->exec($SQL_insert_data);
+$db->exec($SQL_insert_data);
 $res = $db->query('SELECT * FROM Students');
 while ($row = $res->fetchArray()) {
 echo "{$row['StudentId']} {$row['FirstName']}
